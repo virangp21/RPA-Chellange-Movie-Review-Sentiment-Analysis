@@ -9,9 +9,9 @@ http://rpachallenge.com/movieSearch
 
 - Bot first opens the web page and randomly selects three movies to get their reviews. Selectors needs to be created  dynamically for each movie reviews to iterate through them. Using UI Explorer helps with identifying how indexes for selectors are changed. 
 
--Once you extract the movie review text form  P tags for each movie, next step is to find out if this is a positive review or negative  one. UiPath offers Cognitive activities package. You will need to download this package using Package Manager to your project.
+- Once you extract the movie review text form  P tags for each movie, next step is to find out if this is a positive review or negative  one. UiPath offers Cognitive activities package. You will need to download this package using Package Manager to your project.
 
--You will need to sign up for  Microsoft's text analysis API so that you can get API and Key to use within your project. UiPath appends the rest of the path to API so you only needs to specify part of the path in ServiceUrl property for Microsoft Text Analysis API ( e.q. "https://westcentralus.api.cognitive.microsoft.com/text/analytics/v2.1/" ). In Analysis type property then you need to select Sentiment as an option.    
+- You will need to sign up for  Microsoft's text analysis API so that you can get API and Key to use within your project. UiPath appends the rest of the path to API so you only needs to specify part of the path in ServiceUrl property for Microsoft Text Analysis API ( e.q. "https://westcentralus.api.cognitive.microsoft.com/text/analytics/v2.1/" ). In Analysis type property then you need to select Sentiment as an option.    
 
 ## Conclusion
 
