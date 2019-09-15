@@ -1,7 +1,7 @@
 # RPA-Challenge-Movie-Review-Sentiment-Analysis
 ## Introduction
 
-This is an unattended bot that solves the Movie Review challenge from RPA Challenges. Bot uses Microsoft's Text Analysis API to get the sentiment from movie reviews. This is an example of bot using Machine Learning API to get sentiment from using NLP. 
+This is an unattended bot that solves the Movie Review challenge from RPA Challenges. Bot uses Microsoft's Text Analysis API to get the sentiment from movie reviews. This is an example of bot using Machine Learning API to get sentiment using NLP. 
 
 http://rpachallenge.com/movieSearch
 
