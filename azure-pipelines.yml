@@ -10,10 +10,8 @@ pool:
   name: Default
 
 steps:
-- task: UiPathPackage@1
-  inputs:
-    packageAction: 'pack'
-    versioningType: 'autoversion'
-    platformVersion: '19.10.4'
-    uninstallOption: 'never'
-    studioInstallPath: 'C:\Users\Nipa\AppData\Local\UiPath\app-19.10.4'
+- script: C:\Users\Nipa\AppData\Local\UiPath\app-19.10.4\UiRobot.exe pack $(Build.SourcesDirectory)\project.json -o $(Build.ArtifactStagingDirectory)\ -v 1.0.$(Build.BuildNumber)
+  displayName:  'Build the uipath project'
+        
+- publish: $(Build.ArtifactStagingDirectory)
+  artifact: drop
