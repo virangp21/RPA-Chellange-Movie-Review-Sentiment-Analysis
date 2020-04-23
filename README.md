@@ -20,3 +20,5 @@ Obviously, this is a first cut version and there is lot desired in the implement
 ## Important Note
 
 Anyone cloning this repository will need to provide their own API Key in Microsoft Text Analysis activity.  
+
+Added azure devops yaml
