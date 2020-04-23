@@ -16,7 +16,7 @@ steps:
 - publish: $(Build.ArtifactStagingDirectory)
   artifact: drop
 
-- powershell: |
+- powershell:
     Import-Module UiPath.Powershell
     $token = Get-UiPathAuthToken -ClientId $(clientId) -UserKey $(apiKey) -AccountName $(accountName) -CloudDeployment 'Production' -TenantName $(tenantName)
     Add-UiPathPackage -PackageFile $(Build.ArtifactStagingDirectory)\*.1.0.$(Build.BuildNumber).nupkg -AuthToken $token
